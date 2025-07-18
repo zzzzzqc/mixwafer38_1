@@ -1,0 +1,15 @@
+https://tianchi.aliyun.com/dataset/77328
+
+公开说明
+晶圆图的缺陷识别对于确定晶圆缺陷成因至关重要，特别是混合缺陷模式。我们在某晶圆制造厂采集了大量的晶圆图数据，这些晶圆图是通过测试探针对晶圆片上的每一个晶粒进行电学性能测试得到。但实际采集到各类型的晶圆图在数量分布上存在较大差异，为了保持各类型数据间的平衡，我们采用对抗生成网络生成了部分晶圆图，以保持各类型间样本数量的平衡。最终形成了约38000张的混合模式晶圆图缺陷数据集，用于识别混合模式晶圆图缺陷，并辅助晶圆制造工艺中缺陷成因的研究。为方便相关领域的研究者、学生、爱好者更加了解晶圆制造工艺中缺陷的成因，我们公开了混合模式晶圆图缺陷数据集，供大家参考和研究。
+
+数据说明
+["arr_0"]：混合模式晶圆图缺陷数据，0表示空白点，1代表通过电学测试的正常晶粒，2代表未通过电学测试的失效晶粒。数据形状为52×52。
+
+["arr_1"]：混合模式晶圆图缺陷标签，采用one-hot编码，共8维，分别对应晶圆图缺陷的8种基本类型（单一缺陷）。
+
+数据出处
+J. Wang, C. Xu, Z. Yang, J. Zhang and X. Li, "Deformable Convolutional Networks for Efficient Mixed-type Wafer Defect Pattern Recognition," in IEEE Transactions on Semiconductor Manufacturing, doi: 10.1109/TSM.2020.3020985.
+
+东华大学 机械工程学院 智能制造研究所
+Institute of Intelligent Manufacturing, College of Mechanical Engineering, Donghua University
